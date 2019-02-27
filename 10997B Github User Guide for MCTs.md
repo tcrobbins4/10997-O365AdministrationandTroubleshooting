@@ -125,17 +125,23 @@ To install Pandoc, perform the following steps:
 
 ### Installing PowerShell Community Extensions 3.2.2
 
-PowerShell Community Extensions (PSCX) is an open-source project that extends Windows PowerShell with scripts, cmdlets, functions, and other features. PSCX version 3.2.2 is the most current (as of 2/27/2018) PSCX version. You use PSCX to create the .zip files that contain your .docx files. Please note, if you do not install these extensions, the document-creation script fails. The PSCX files are make available through the PowerShell Gallery at https://www.powershellgallery.com/packages/Pscx/3.2.2.
+PowerShell Community Extensions (PSCX) is an open-source project that extends Windows PowerShell with scripts, cmdlets, functions, and other features. You use PSCX to create the .zip files that contain your .docx files. Please note, if you do not install these extensions, the document-creation script fails.
 
-To install PSCX 3.2.2, perform the following steps:
-<!-- -->
-1. Open Windows PowerShell as an administrator.
-2. Type **Install-Module -Name Pscx -RequiredVersion 3.2.2 -AllowClobber** and press Enter.
-3. If prompted, type **Y** to install a new NuGet provider version and press Enter.
-4. If prompted, type **Y** to allow the install from a untrusted repository and press Enter.
-5. Wait for the install to finish, and then close the Windows PowerShell Window.
+To install PSCX, perform the following steps:
+
+1. Open Windows PowerShell as an administrator
+
+2. In the script window enter the following command and press enter:
+
+  ```
+  Install-module PSCX
+  ```
+
+3. If prompted that you are installing a module from an untrusted repository, select **Yes**.
+
 
 > **Important:** After you install Pandoc and PSCX, you must restart your computer to complete the installation. If you do not restart your computer, the document-creation script might fail.
+
 
 Downloading and printing lab files
 ----------------------------------
